@@ -11,8 +11,9 @@ public class isPalendrom {
         }
         return (rev==n);
     }
+    
     public static void main(String[] args) {
-        int num = 122;
+        int num = 121;
         if (isPelNum(num)==true)
         System.out.println("yes : it's palindrom");
         else
