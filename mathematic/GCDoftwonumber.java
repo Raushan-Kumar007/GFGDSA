@@ -14,7 +14,7 @@ public class GCDoftwonumber {
     }
     */
     // Eucledean Algorithm (let 'b' be smaller than 'a' GCD(a,b)=GCD(a-b, b))
-    public static  int GCD(int a, int b){
+   /* public static  int GCD(int a, int b){
         while(a!=b){
             if(a>b)
             a = a-b;
@@ -23,9 +23,17 @@ public class GCDoftwonumber {
         }
         return a;
     }
+    */
+    // efficient solution of Eucledean Algorithm
+    public static  int GCD(int a, int b){
+        if(b==0)
+        return a;
+        else
+        return GCD(b, a%b);
+    }
     public static void main(String[] args) {
-        int a = 4;
-        int b = 6;
+        int a = 40;
+        int b = 60;
         System.out.println(GCD(a, b));
         
     }
