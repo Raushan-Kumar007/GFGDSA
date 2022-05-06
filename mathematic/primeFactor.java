@@ -19,7 +19,10 @@ public class primeFactor {
     }
     */
     // NAIVE SOLUTION TO FIND PRIME FACTOR OF ANY NUMBER
-    static boolean isPrime(int n){
+    /*
+    timeComplexity is BigO(n^2logn)
+    */
+   /* static boolean isPrime(int n){
         if(n==1||n==0)
         return false;
         if(n==2 || n==3)
@@ -42,6 +45,44 @@ public class primeFactor {
                 }
             }
         }
+    }
+    */    //  or //
+   /* static void PrimeFactor(int n){
+        if(n<=0)
+        return;
+        for(int i=2; i*i<=n; i++){
+            while(n%i==0){
+                System.out.println(i+" ");
+                n = n/i;
+            }
+        }
+        if(n>1)
+        System.out.println(n); 
+    }*/
+    // more efficient way to find primefactor of a number timecomplexity = theta(n^1/2)
+    static void PrimeFactor(int n){
+        if(n<=0)
+        return;
+        while(n%2==0){
+            System.out.println(2);
+            n = n/2;
+        }
+        while(n%3==0){
+            System.out.println(3);
+            n = n/3;
+        }
+        for(int i=5; i*i<=n; i=i+6){
+            while(n%i==0){
+                System.out.println(i);
+                n = n /i;
+            }
+            while(n%i+2==0){
+                System.out.println(i+2);
+                n = n/i+2;
+            }
+        }
+        if(n>3)
+        System.out.println(n);
     }
     public static void main(String[] args) {
         int n = 1200;
