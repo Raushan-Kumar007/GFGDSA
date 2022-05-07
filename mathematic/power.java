@@ -9,7 +9,7 @@ public class power {
         return res;
     }*/
    // efficient solution with timecomplexity is thete(logn) and spacecomplexity is theta(logn)
-    static int Power(int x, int n){
+    /*static int Power(int x, int n){
         if(n==0)
         return 1;
         int temp = Power(x,n/2);
@@ -18,6 +18,18 @@ public class power {
         return temp;
         else
         return temp*x;
+    }*/
+    // finding power with iterative approch int timecomplexity bigO(logn) and spaceComplexity bigO(1)
+    static int Power(int x, int n){
+        int res = 1;
+         while(n>0){
+             if(n%2!=0){
+                 res = res*x;
+             }
+             x = x * x;
+             n = n/2;
+         }
+         return res;
     }
     public static void main(String[] args) {
         
