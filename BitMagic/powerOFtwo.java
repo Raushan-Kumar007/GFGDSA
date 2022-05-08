@@ -14,14 +14,18 @@ public class powerOFtwo {
     }
     */
     // efficient way to find the power of 2 by brian and kerningham algorithm 
-    static boolean powerof2(int n){
+   /* static boolean powerof2(int n){
         if(n==0)
         return false;
         return  ((n&(n-1))==0);
     }
+    */
+    static boolean powerof2(int n){
+        return (n!=0 && (n &(n-1))==0);
+    }
 
    public static void main(String[] args) {
-       int n = 18;
+       int n = 16;
        if(powerof2(n)==true)
        System.out.println("YES");
        else
