@@ -15,7 +15,7 @@ public class oneODD {
          return 0;
     }
     */
-    // efficient solution to find one odd with O(n) time complexity and O(1) space complexity
+    
     static int oneoddOccuring(int[] arr, int n){
         int res = 0;
         for(int i=0; i<n; i++){
