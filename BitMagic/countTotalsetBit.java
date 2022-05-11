@@ -1,7 +1,7 @@
 package BitMagic;
 
 public class countTotalsetBit {
-    static int countSetBits(int n)
+  /*  static int countSetBits(int n)
     {
         //Ignoring 0 as all the bits are unset. 
         n+=1;
@@ -26,7 +26,24 @@ public class countTotalsetBit {
         
         //returning count of set bits.
         return count;
-    }
+    }*/
+    // otherway to find total count of set bit
+    static int largestPowerOfTwo(int n){
+        int x=0;
+        while((1<<x) <= n){
+            x++;
+        }
+        return x-1;
+   }
+       public static int countSetBits(int n){
+       
+           // Your code here
+           int x = largestPowerOfTwo(n);
+          if(n==0)
+        return 0;
+         else return (1<<(x-1))*x + (n- (1<<x) +1 ) + countSetBits( n- (1<<x)); 
+       }
+   
     public static void main(String[] args) {
         System.out.println(countSetBits(4));
     }
