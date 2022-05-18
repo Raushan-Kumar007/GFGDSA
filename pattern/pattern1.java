@@ -18,3 +18,11 @@ public class pattern1 {
         printP1(n);
     }
 }
+ /*  
+        if n = 4
+        then , 
+        ****
+        ****
+        ****
+        ****    
+*/
