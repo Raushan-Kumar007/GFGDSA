@@ -22,7 +22,7 @@
 package BitMagic;
 
 public class NisSparse {
-    public static boolean isSparse(int n){
+   /* public static boolean isSparse(int n){
         if(n == 0){
             return true;
         }
@@ -39,9 +39,12 @@ public class NisSparse {
             n = n >> 1;
         }
         return true;
+    }*/
+    public static boolean isSparse(int n){
+        return (n & (n>>1))==0;
     }
     public static void main(String[] args) {
-        System.out.println(isSparse(16));
+        System.out.println(isSparse(23));
         
     }
 }
