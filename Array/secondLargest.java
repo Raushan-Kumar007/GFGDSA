@@ -1,7 +1,9 @@
 package Array;
 
 public class secondLargest {
-    static int getLarge(int arr[]){
+
+ /*   naive approch 
+ static int getLarge(int arr[]){
       int  n = arr.length;
         int  largest = 0;
         for(int i=1; i<n; i++){
@@ -26,9 +28,31 @@ public class secondLargest {
         }
         return res;
     }
+    */
+    // efficient approch
+   static int secondlargest(int a[] )
+    {   int n = a.length;
+        int largest=0;
+        int res=-1;
+        
+        for(int i=1;i<n;i++)
+        {
+            if(a[i]>a[largest])
+            {
+                res=largest;
+                largest=i;
+            }
+            else if(a[i]!=a[largest])
+            {
+                if(res==-1||a[i]>a[res])
+                res=i;
+            }
+        }
+        return res;
+    }
     public static void main(String[] args) {
         int arr[] = {10,7,30,100};
-        System.out.println(secLargest(arr));
+        System.out.println( secondlargest(arr));
         
     }
     
