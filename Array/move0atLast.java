@@ -2,7 +2,7 @@ package Array;
 
 public class move0atLast {
     // naive approch with time complexity is O(n^2)
-    static void zeroAtEnd(int[] arr){
+   /* static void zeroAtEnd(int[] arr){
      int n = arr.length;
      for(int i=0; i<n; i++){
          if(arr[i]==0){
@@ -15,6 +15,19 @@ public class move0atLast {
              }
          }
      }
+    }*/
+    // efficient approch to move zero at the end with timecomplexity is theta(n)
+    static void zeroAtEnd(int[] arr){
+        int n=arr.length;
+        int count = 0;
+        for(int i=0; i<n; i++){
+            if(arr[i]!=0){
+                int temp = arr[i];
+                arr[i]=arr[count];
+                arr[count]=temp;
+                count++;
+            }
+        }
     }
     public static void main(String[] args) {
         int arr[] = {1, 9, 8, 4, 0, 0, 2, 7, 0, 6, 0, 9};
