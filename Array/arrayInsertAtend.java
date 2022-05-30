@@ -2,10 +2,9 @@ package Array;
 
 public class arrayInsertAtend {
     static void arrInsert(int[] arr, int n, int element){
-        for(int i=0;i<n; i++){
-            if(arr[i]==arr[n-1])
+        
             arr[n-1]=element;
-        }
+
     }
     public static void main(String[] args) {
         int arr[] = new int[4];
