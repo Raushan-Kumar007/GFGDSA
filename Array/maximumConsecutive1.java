@@ -32,8 +32,7 @@ public class maximumConsecutive1 {
         return res;
     }
     public static void main(String[] args) {
-        int arr[] ={0,1,1,0,1,0};
-        int n = 6; 
+        int arr[] ={0,1,1,0,1,0}; 
         System.out.print(maxConsOne(arr));
     }
 }
