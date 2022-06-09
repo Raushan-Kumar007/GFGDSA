@@ -19,7 +19,13 @@ public class BinarySearch {
        return -1;
     }
     */
+
+    // time complexity is theta(logn), Auxullary space is theta(1) in recursive approch
+    
+
     static int BinarySrch(int arr[],int x,int left, int right){
+        if(left>right)
+        return -1;
         int mid = left + (right - left)/2;
         if(arr[mid]==x)
         return mid;
