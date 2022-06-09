@@ -22,7 +22,6 @@ public class BinarySearch {
     }
     */
     static int BinarySrch(int arr[],int x,int left, int right){
-        int n = arr.length;
         int mid = left + (right - left)/2;
         if(arr[mid]==x)
         return mid;
