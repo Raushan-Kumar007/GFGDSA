@@ -1,7 +1,5 @@
 package Searching;
 
-import javax.lang.model.util.ElementScanner6;
-
 public class BinarySearch {
     // iterative Approch to find a element in shorted Array
    /*  static int BinarySrch(int arr[],int x){
