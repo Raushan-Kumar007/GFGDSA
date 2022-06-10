@@ -1,7 +1,5 @@
 package Searching;
 
-import Array.removeDuplicates;
-
 public class CountOccurInShortedArr {
     // Naive approch to find countOccurence in shorted array using bigO(n) time complexity
    /* static int countOccurInArr(int arr[], int x){
