@@ -1,0 +1,30 @@
+Given two arrays of numbers a1, a2, a3,...an and b1, b2, .. bn where each number is 0 or 1, the fastest algorithm to find the largest span(i, j) such that ai + ai+1, ....aj = bi + bi+1, .. bj. or report that there is not such span,
+A
+Takes O(n3) and Ω(2n) time if hashing is permitted
+B
+Takes O(n3) and Ω(n2.5) time in the key comparison model
+C
+Takes θ(n) time and space
+D
+Takes O(√n) time only if the sum of the 2n elements is an even number
+Answer:--c
+Explanation
+The problem can be solved in  Takes θ(n) time and space.
+
+The idea is based on below observations.
+Since there are total n elements, maximum sum is n for both arrays.
+Difference between two sums varies from -n to n. So there are total 2n + 1 possible values of difference.
+If differences between prefix sums of two arrays become same at two points, then subarrays between these two points have same sum.
+Below is Complete Algorithm.
+Create an auxiliary array of size 2n+1 to store starting points of all possible values of differences (Note that possible values of differences vary from -n to n, i.e., there are total 2n+1 possible values)
+Initialize starting points of all differences as -1.
+Initialize maxLen as 0 and prefix sums of both arrays as 0, preSum1 = 0, preSum2 = 0
+Traverse both arrays from i = 0 to n-1.
+Update prefix sums: preSum1 += arr1[i], preSum2 += arr2[i]
+Compute difference of current prefix sums: curr_diff = preSum1 – preSum2
+Find index in diff array: diffIndex = n + curr_diff // curr_diff can be negative and can go till -n
+If curr_diff is 0, then i+1 is maxLen so far
+Else If curr_diff is seen first time, i.e., starting point of current diff is -1, then update starting point as i
+Else (curr_diff is NOT seen first time), then consider i as ending point and find length of current same sum span. If this length is more, then update maxLen
+Return maxLen
+See Longest Span with same Sum in two Binary arrays for complete running code
