@@ -1,0 +1,14 @@
+What does the following C expression do?
+
+ x = x & (x-1) 
+A
+Sets all bits as 1
+B
+Makes x equals to 0
+C
+Turns of the rightmost set bit
+D
+Turns of the leftmost set bit
+Answer:---C
+Explanation
+The expression simply turns off the rightmost set bit. For example, if x = 14 (1110), x - 1 = 13 (1101) it returns resultant as (1100) i.e, 12 
