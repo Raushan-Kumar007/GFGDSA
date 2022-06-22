@@ -1,0 +1,18 @@
+A is running @ 20 m / s on a circular track of 400 m and B is running on the same track @ 16 m / s in opposite direction. After 5 minutes from starting how many times they have crossed each other on starting point?
+A
+One time
+B
+Two times
+C
+Three times
+D
+Four times
+
+Answer:--C
+Explanation
+Meeting for the first time on a circular track = LCM (circumference / speed of A, circumference / speed of B )
+= LCM( 400 / 20, 400 / 16)
+= LCM( 20, 25) = 100 sec.
+In 100 second they will meet for the first time on starting point.
+Similarly 2 time in 200 sec and after 300 sec(i.e. 5 minute) they had crossed each other on starting point 3 times.
+So, option (C) is correct.
