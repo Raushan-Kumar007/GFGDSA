@@ -1,0 +1,31 @@
+There are three numbers a, b, c in G.P. such that a + b + c = 14. If a and b are increased by 1 and c is decreased by 1 then the series formed by these numbers is in A.P. Calculate the value for a*b*c ?
+
+A
+64
+B
+105
+C
+128
+D
+150
+
+Answer:----A
+
+Explanation
+Given, a + b + c = 14
+
+a' = a +1
+b' = b +1
+c' = c -1
+
+a' + b' + c' = 15
+2b' = a' + c'
+
+15 - b' = 2b'
+b' = 5
+b = 4
+a' + b' =10
+By hit and trial,
+
+a' = 3, b' = 5, c' = 7 and,
+a = 2, b = 4, c = 8
