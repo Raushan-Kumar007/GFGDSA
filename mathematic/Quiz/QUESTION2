@@ -1,0 +1,26 @@
+There are n terms in an A.P. where n is even. The sum of odd terms and even terms are 63 and 72 respectively. The last term is greater than first term by 16.5 , Calculate n.
+
+A
+10
+B
+12
+C
+14
+D
+16
+
+Answer:----b
+
+Explanation
+(Number of terms / 2) * Common difference = (Sum of even terms - Sum of odd terms )
+
+(n/2) * d = 72 - 63
+nd= 18
+
+d= common difference
+
+Last term - first term = 16.5
+(n-1)d = 16.5
+nd - d = 16.5
+d = 1.5
+n = 12
