@@ -1,0 +1,25 @@
+What does the following function do?
+
+ 
+
+int fun(int x, int y)
+
+{
+
+    if (y == 0)   return 0;
+
+    return (x + fun(x, y-1));
+
+}
+
+A
+x + y
+B
+x + x*y
+C
+x*y
+D
+xy
+Answer:--C
+Explanation
+The function adds x to itself y times which is x*y.
