@@ -1,0 +1,30 @@
+What does the following function print for n = 25?
+
+ 
+
+void fun(int n)
+
+{
+
+  if (n == 0)
+
+    return;
+
+
+
+  printf("%d", n%2);
+
+  fun(n/2);
+
+}  
+
+A
+11001
+B
+10011
+C
+11111
+D
+00000
+Explanation
+The function mainly prints binary representation in reverse order.
