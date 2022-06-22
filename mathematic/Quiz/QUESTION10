@@ -1,0 +1,16 @@
+Find the sum of the series:
+128, 64, 32, 16, 8, … upto infinity.
+A
+Infinity
+B
+0
+C
+128
+D
+256
+Answer:--D
+Explanation
+First term, a = 128
+Common ratio, r = 64 / 128 = 0.5
+We know that for an infinite GP, Sum of terms = a / (1 – r)
+-> Sum of terms of the GP = 128 / (1 – 0.5) = 128 / 0.5 = 256
