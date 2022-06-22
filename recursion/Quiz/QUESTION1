@@ -1,0 +1,60 @@
+Predict output of following program
+
+ 
+
+#include <stdio.h>
+
+
+
+int fun(int n)
+
+{
+
+    if (n == 4)
+
+       return n;
+
+    else return 2*fun(n+1);
+
+}
+
+
+
+
+
+int main()
+
+{
+
+   printf("%d ", fun(2));
+
+   return 0;
+
+}
+
+
+
+A
+4
+B
+8
+C
+16
+D
+Runtime Error
+Explanation
+Fun(2) = 2 * Fun(3) and Fun(3) = 2 * Fun(4) ....(i)
+
+Fun(4) = 4 ......(ii)
+
+From equation (i) and (ii),
+
+Fun(2) = 2 * 2 * Fun(4)
+
+Fun(2) = 2 * 2 * 4
+
+Fun(2) = 16. 
+
+
+
+So, C is the correct answer
