@@ -1,0 +1,15 @@
+What does the following C expression do?
+
+x = (x<<1) + x + (x>>1);
+A
+Multiplies an integer with 7
+B
+Multiplies an integer with 3.5
+C
+Multiplies an integer with 3
+D
+Multiplies an integer with 8
+
+Answer:--B
+Explanation
+The expression multiplies an integer with 3.5. For example, if x is 4, the expression returns 15. If x is 6, it returns 21. If x is 5, it return 17. See Multiply a given Integer with 3.5 for more details.
