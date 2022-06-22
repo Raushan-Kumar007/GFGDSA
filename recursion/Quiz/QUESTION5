@@ -1,0 +1,52 @@
+Output of following program?
+ 
+
+#include<stdio.h>
+
+void print(int n)
+
+{
+
+    if (n > 4000)
+
+        return;
+
+    printf("%d ", n);
+
+    print(2*n);
+
+    printf("%d ", n);
+
+}
+
+
+
+int main()
+
+{
+
+    print(1000);
+
+    getchar();
+
+    return 0;
+
+}
+
+A
+1000 2000 4000
+
+1000 2000 4000 4000 2000 1000
+C
+1000 2000 4000 2000 1000
+D
+1000 2000 2000 1000
+Explanation
+First time n=1000
+Then 1000 is printed by first printf function then call print(2*1000) then again print 2000 by printf function then call print(2*2000) and it prints 4000 next time print(4000*2) is called.
+
+Here 8000 is greater than 4000 condition becomes true and it return at function(2*4000). Here n=4000 then 4000 will again print through second printf.
+
+Similarly print(2*2000) after that n=2000 then 2000 will print and come back at print(2*1000) here n=1000, so print 1000 through second printf.
+
+Option (B) is correct.
