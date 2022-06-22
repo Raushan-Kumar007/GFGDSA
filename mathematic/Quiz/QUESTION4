@@ -1,0 +1,21 @@
+What will be the remainder when 7100 is divided by 5?
+A
+0
+B
+1
+C
+2
+D
+3
+
+Answer:---B
+Explanation
+This is a basic question of Chinese remainder theorem(CRT):
+
+We can write 7100 as (74)25.
+
+Now, 74 = 2401 when we divide it by 5 then 1 will be the remainder.
+
+Now, 7100 as (74)25 = (2401)25 mod 5 = 125 mod 5 = 1.
+
+Therefore, (7100 % 5) = 1.
