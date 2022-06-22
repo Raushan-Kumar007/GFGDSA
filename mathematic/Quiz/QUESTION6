@@ -1,0 +1,19 @@
+Five full-time employees and 6 interns work 12 hours a day and finish a task in 20 days. 8 full-time employees and 18 interns work 10 hours a day and finish the same task in 12 days. How many are working hours per day required if 5 full-time employees and 6 interns work for 30 days to finish the same amount of work? We may assume that changing number of people in a group does not change productivity.
+A
+8 hours a day
+B
+7 hours a day
+C
+6 hours a day
+D
+5 hours a day
+
+Answer:---A
+Explanation
+(5 full time + 6 interns) * 12 * 20 = (8 full time + 18 interns) * 10 * 12
+(5 full time + 6 interns) * 2 = (8 full time + 18 interns)
+2 full time = 6 interns
+1 full time = 3 interns.
+Now (8 full time + 18 interns) * 10 * 12 = (5 full time + 6 interns) * x * 30
+42 interns * 12 * 10 = 21 interns * x * 30
+X = 8 hours a day.
