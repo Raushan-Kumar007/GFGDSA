@@ -1,0 +1,27 @@
+Consider the following recursive function fun(x, y). What is the value of fun(4, 3)
+
+ 
+
+int fun(int x, int y) 
+
+{
+
+  if (x == 0)
+
+    return y;
+
+  return fun(x - 1,  x + y);
+
+} 
+
+A
+13
+B
+12
+C
+9
+D
+10
+Answer:--A
+Explanation
+The function fun() calculates and returns ((1 + 2 … + x-1 + x) +y) which is x(x+1)/2 + y.
