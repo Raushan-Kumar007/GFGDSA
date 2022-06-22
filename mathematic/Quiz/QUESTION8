@@ -1,0 +1,23 @@
+There are m multiples of 6 in range [0, 100] and n multiples of 6 in [-6, 35]. Find out the value of X, if X = m - n. Where X, m, and n are positive integer.
+
+A
+
+9
+
+B
+
+10
+
+C
+
+11
+
+D
+
+12
+
+Answer:---B
+
+Explanation
+
+There are 16 multiple of 6 in between 0 and 100. So, m = 16. There 6 multiple of 6 in between -6 and 35. So, n = 6. X = m - n = 16 - 6 = 10.
