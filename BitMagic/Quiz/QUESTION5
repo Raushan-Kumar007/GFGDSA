@@ -1,0 +1,25 @@
+Consider the following code snippet for checking whether a number is power of 2 or not.
+
+ 
+
+/* Incorrect function to check if x is power of 2*/
+
+bool isPowerOfTwo (unsigned int x) 
+
+{ 
+
+  return (!(x&(x-1))); 
+
+} 
+What is wrong with above function?
+A
+It does reverse of what is required
+B
+It works perfectly fine for all values of x.
+C
+It does not work for x = 0
+D
+It does not work for x = 1
+Answer:---c
+Explanation
+Please see https://www.geeksforgeeks.org/program-to-find-whether-a-no-is-power-of-two/
