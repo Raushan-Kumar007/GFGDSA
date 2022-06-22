@@ -2,7 +2,6 @@ package Searching;
 
 public class repeatElement2 {
     static int findRepeating(int arr[]){
-        int n = arr.length;
         int slow = arr[0],fast=arr[0];
         do{
             slow=arr[slow];
@@ -18,7 +17,7 @@ public class repeatElement2 {
         return slow;
     }
     public static void main(String[] args) {
-        int arr[] = {1, 3, 2, 4, 6, 5, 7, 3}, n= 8;
+        int arr[] = {1, 3, 2, 4, 6, 5, 7, 3};
         System.out.println(findRepeating(arr)); 
     }
 }
