@@ -1,0 +1,47 @@
+What does the following function do?
+
+ 
+
+int fun(unsigned int n)
+
+{
+
+    if (n == 0 || n == 1)
+
+        return n;
+
+
+
+    if (n%3 != 0)
+
+        return 0;
+
+
+
+    return fun(n/3);
+
+}
+
+A
+It returns 1 when n is a multiple of 3, otherwise returns 0
+B
+It returns 1 when n is a power of 3, otherwise returns 0
+C
+It returns 0 when n is a multiple of 3, otherwise returns 1
+D
+It returns 0 when n is a power of 3, otherwise returns 1
+Explanation
+Lets solve with example, n = 27 which power of 3.
+First time if condition is false as n is neither equal to 0 nor equal to 1 then 27%3 = 0.
+Here, again if condition false because it is equal to 0.
+Then fun(27/3) will call.
+
+Second time if condition is false as n is neither equal to 0 nor equal to 1 then 9%3 = 0.
+Here again if condition false because it is equal to 0.
+
+Then fun (9/3) will call and third time if condition is false as n is neither equal to 0 nor equal to 1 then 3%3 = 0.
+Here again if condition false because it is equal to 0.
+
+Then fun(3/3) will call here n==1 if condition gets true and it return n i.e. 1.
+
+Option (B) is correct.
