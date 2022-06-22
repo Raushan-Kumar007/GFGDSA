@@ -1,0 +1,49 @@
+
+In an experiment, one red dice and one black dice(both are fair) are rolled. What is the probability that,
+
+The number on black dice will divide the number on red dice.
+Number on black dice is multiple of the number on red dice.
+A
+
+22 / 36 and 14 / 36 respectively
+
+B
+
+12 / 36 and 18 / 36 respectively
+
+C
+
+14 / 36 and 14 /36 respectively
+
+D
+
+6 / 36 and 8 / 36 respectively
+
+Answer:----C
+
+Explanation
+
+We have two dice one is black and the other one is red: There will be a total of 36 outcomes.
+
+We have to find the probability of the outcome that the number on black dice divides the number on red dice.
+1 divides 1, 2, 3, 4, 5, 6.
+2 divides 2, 4, 6.
+3 divides 3, 6.
+4 divides 4.
+5 divides 5.
+6 divides 6.
+There are 14 numbers that will be counted as favorable outcomes.
+Therefore, probability = favorable outcome / total outcome.
+i.e. = 14 / 36.
+
+We have to find the probability that the number on black dice is multiple of number on red dice.
+1 is multiple of 1
+2 is multiple of 1 and 2.
+3 is multiple of 1 and 3.
+4 is multiple of 1, 2 and 4
+5 is multiple of 1 and 5.
+6 is multiple of 1, 2, 3 and 6.
+There are 14 number which will be counted in favourable outcome;
+probability = favorable outcome / total outcome.
+i.e. = 14 / 36.
+
