@@ -1,0 +1,37 @@
+A three dimensional array in ‘C’ is declared as int A[x][y][z]. Consider that array elements are stored in row major order and indexing begins from 0. Here, the address of an item at the location A[p][q][r] can be computed as follows (where w is the word length of an integer):
+
+
+A
+&A[0][0][0] + w(y * z * q + z * p + r)
+
+&A[0][0][0] + w(y * z * p + z*q + r)
+C
+&A[0][0][0] + w(x * y * p + z * q+ r)
+D
+&A[0][0][0] + w(x * y * q + z * p + r)
+Explanation
+According to above question we have to find the address of A[p][q][r]
+
+To reach pth row we must have to cross 0 to p-1 row i.e. p rows and each rows contains y∗z elements
+
+Hence ,
+
+= y∗z∗p
+
+Now to reach qth element in pth row we have to cross q rows and each row contains z(total columns) elements
+
+=z∗q
+
+to reach rth elements we have to cross r elements in (p+1)th row
+
+Total elements to cross =(y∗z∗p+z∗q+r)
+
+Now each element occupies m amount of space in memory
+
+Therefore total space occupied by these elements = m(y∗z∗p+z∗q+r)
+
+Hence , address of A[p][q][r]=base address+ Space Occupied by the Elements Before it.
+
+=&A[0][0][0]+m(y*z*p+z*q+r)
+
+Hence Option (B) is correct.
