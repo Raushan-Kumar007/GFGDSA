@@ -1,0 +1,12 @@
+Which of the following operations is not O(1) for an array of sorted data. You may assume that array elements are distinct.
+A
+Find the ith largest element
+B
+Delete an element
+C
+Find the ith smallest element
+D
+All of the above
+Answer:---B
+Explanation
+The worst case time complexity for deleting an element from array can become O(n).
