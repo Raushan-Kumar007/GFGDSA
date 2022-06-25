@@ -1,0 +1,11 @@
+Which of the following correctly declares an array?
+A
+int geeks[20];
+B
+int geeks;
+C
+geeks{20};
+D
+array geeks[20];
+Explanation
+Option A is correct. Int is the data type used,geeks is the name of the array and [20] is the size of the array.
