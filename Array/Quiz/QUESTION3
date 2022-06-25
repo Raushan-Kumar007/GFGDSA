@@ -1,0 +1,27 @@
+The minimum number of comparisons required to determine if an integer appears more than n/2 times in a sorted array of n integers is
+
+A
+
+Θ(n)
+
+B
+
+Θ(logn)
+
+C
+
+Θ(log*n)
+
+D
+
+Θ(1)
+
+Answer:---D
+Explanation
+
+If you answered Theta(1), then think of examples {1, 2, 2, 2, 4, 4}, {1, 1, 2, 2, 2, 2, 3, 3} The Best way to find out whether an integer appears more than n/2 times in a sorted array(Ascending Order) of n integers, would be binary search approach.
+
+The First occurrence of an element can be found out in O(log(n)) time using divide and conquer technique,lets say it is i.
+The Last occurrence of an element can be found out in O(log(n)) time using divide and conquer technique,lets say it is j.
+Now number of occuerrence of that element(count) is (j-i+1). Overall time complexity = log n +log n +1 = O(logn)
+See Check for Majority Element in a sorted array This solution is contributed by Nirmal Bharadwaj
