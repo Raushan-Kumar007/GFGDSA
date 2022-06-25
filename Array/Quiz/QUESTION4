@@ -1,0 +1,41 @@
+Let A be a square matrix of size n x n. Consider the following program. What is the expected output?
+
+ 
+
+
+
+C = 100
+
+for i = 1 to n do
+
+    for j = 1 to n do
+
+    {
+
+        Temp = A[i][j] + C
+
+        A[i][j] = A[j][i]
+
+        A[j][i] = Temp - C
+
+    } 
+
+for i = 1 to n do
+
+    for j = 1 to n do
+
+        Output(A[i][j]);
+
+A
+The matrix A itself
+B
+Transpose of matrix A
+C
+Adding 100 to the upper diagonal elements and subtracting 100 from diagonal elements of A
+D
+None of the above
+Answer:---A
+Explanation
+If we take look at the inner statements of first loops, we can notice that the statements swap A[i][j] and A[j][i] for all i and j. Since the loop runs for all elements, every element A[l][m] would be swapped twice, once for i = l and j = m and then for i = m and j = l. Swapping twice means the matrix doesn’t change.
+
+Source: http://www.geeksforgeeks.org/data-structures-algorithms-set-34/
