@@ -1,0 +1,18 @@
+An algorithm performs (logN)1/2 find operations, N insert operations, (logN)1/2 delete operations, and (logN)1/2 decrease-key operations on a set of data items with keys drawn from a linearly ordered set. For a delete operation, a pointer is provided to the record that must be deleted. For the decrease-key operation, a pointer is provided to the record that has its key decreased. Which one of the following data structures is the most suited for the algorithm to use, if the goal is to achieve the best total asymptotic complexity considering all the operations?
+A
+Unsorted array
+B
+Min-heap
+C
+Sorted array
+D
+Sorted doubly linked list
+Answer:----A
+Explanation
+The time complexity of insert in unsorted array is O(1), O(Logn) in Min-Heap, O(n) in sorted array and sorted DLL.
+For unsorted array, we can always insert an element at end and do insert in O(1) time
+For Min Heap, insertion takes O(Log n) time. Refer Binary Heap operations for details.
+For sorted array, insert takes O(n) time as we may have to move all elements worst case.
+For sorted doubly linked list, insert takes O(n) time to find position of element to be inserted.
+
+Since number of insertion operations is asymptotically higher, unsorted array is preferred.
