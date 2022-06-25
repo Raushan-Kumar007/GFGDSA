@@ -1,0 +1,13 @@
+Let A[1...n] be an array of n distinct numbers. If i < j and A[i] > A[j], then the pair (i, j) is called an inversion of A. What is the expected number of inversions in any permutation on n elements ?
+A
+n(n-1)/2
+B
+n(n-1)/4
+C
+n(n+1)/4
+D
+2n[logn]
+Answer:---B
+Explanation
+
+There are n(n-1)/2 pairs such that i < j. For a pair (ai, aj), probability of being inversion is 1/2. Therefore expected value of inversions = 1/2 * (n(n-1)/2) = n(n-1)/4.
