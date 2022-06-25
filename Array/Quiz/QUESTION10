@@ -1,0 +1,12 @@
+Consider a two dimensional array A[20][10]. Assume 4 words per memory cell, the base address of array A is 100, elements are stored in row-major order and first element is A[0][0]. What is the address of A[11][5] ?
+A
+560
+B
+460
+C
+570
+D
+575
+Answer:---A
+Explanation
+Element A[11][0] is stored at "Base Address + 11 * 10 * 4" which is "Base Address + 440" = 540. So A[11][5] is stored at 540 + 5*4 = 560.
