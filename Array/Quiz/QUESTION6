@@ -1,0 +1,14 @@
+Consider an array consisting of –ve and +ve numbers. What would be the worst case time complexity of an algorithm to segregate the numbers having same sign altogether i.e all +ve on one side and then all -ve on the other ?
+A
+O(N)
+B
+O(N Log N)
+C
+O(N * N)
+D
+O(N Log Log N)
+Answer:---A
+Explanation
+
+Here we can use the partition algorithm of quick sort for segregation and answer will be O(N).
+Choose the first element as pivot whatever may be its sign we don’t care and keep an extra index at pivot position .
