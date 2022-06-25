@@ -1,0 +1,24 @@
+A program P reads in 500 integers in the range [0..100] representing the scores of 500 students. It then prints the frequency of each score above 50. What would be the best way for P to store the frequencies? (GATE CS 2005)
+ 
+
+
+A
+An array of 50 numbers
+ 
+
+B
+
+An array of 100 numbers
+ 
+
+C
+
+An array of 500 numbers
+ 
+
+D
+
+A dynamically allocated array of 550 numbers
+
+Answer:---A
+ 
