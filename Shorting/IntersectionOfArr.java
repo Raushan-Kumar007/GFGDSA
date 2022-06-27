@@ -4,7 +4,7 @@ public class IntersectionOfArr {
 
     // Naive approch with time complexity is BigO(n*m)
 
-    static void Intersection(int arr1[], int arr2[]){
+   /*  static void Intersection(int arr1[], int arr2[]){
         int n = arr1.length;
         int m = arr2.length;
         for(int i=0;i<n;i++){
@@ -15,6 +15,28 @@ public class IntersectionOfArr {
                     System.out.print(arr1[i]+" ");
                     break;
                 }
+            }
+        }
+    }
+    */
+
+    static void Intersection(int arr1[], int arr2[]){
+        int n = arr1.length;
+        int m = arr2.length;
+        int i=0,j=0,k=0;
+        while(i<n && j<m){
+            if(i>0 && arr1[i]==arr1[i-1]){
+                i++;
+                continue;
+            }
+            if(arr1[i]<arr2[j]){
+                i++;
+            }else if(arr1[i]>arr2[j]){
+                j++;
+            }else{
+                System.out.print(arr1[i]+" ");
+                i++;
+                j++;
             }
         }
     }
