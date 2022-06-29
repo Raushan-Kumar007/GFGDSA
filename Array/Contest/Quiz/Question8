@@ -1,0 +1,64 @@
+Consider the following recursive JAVA function. If get(6) function is being called in main() then how many times will the get() function be invoked before returning to the main()? 
+
+
+
+static void get (int n)
+{
+  if (n < 1) return;
+  get(n-1);
+  get(n-3);
+  System.out.print(n);
+}
+
+
+
+
+
+15
+
+25
+
+35
+
+45
+
+Answer:---B
+EXPLANATION
+
+                              get(6) [25 Calls]
+                              /      
+               [17 Calls] get(5)       get(3) [7 Calls]
+                        /     
+                    get(4)    get(2)[5 Calls]
+                   /     
+     [7 Calls] get(3)  get(1)[3 Calls]
+                /     
+             get(2)   get(0)
+            /    
+[3 Calls]get(1)  get(-1) 
+   /  
+get(0) get(-2)
+
+We can verify the same by running below program. 
+
+
+
+C/C++ Code
+ 
+# include <stdio.h>
+int count = 0;
+
+void get (int n)
+{
+    count++;
+    if (n < 1) return;
+    get(n-1);
+    get(n-3);
+}
+int main()
+{
+    get(6);
+    printf("%d ", count);
+}
+
+Output: 25
