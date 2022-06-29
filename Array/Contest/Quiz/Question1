@@ -1,0 +1,25 @@
+Let T(n) be defined by T(1) = 10 and T(n + 1) = 2n + T(n) and for all integers n ≥ 1 . Which of the following represents the order of growth of T(n) as a function of
+
+A
+O(n)
+B
+O(n log n)
+C
+O(n2)
+D
+O(n3)
+Answer:---C
+EXPLANATION
+
+T(n + 1) = 2n + T(n) 
+By substitution method:
+T(n + 1) = 2n + (2(n-1) + T(n-1))
+T(n + 1) = 2n + (2(n-1) + (2(n-2) + T(n-2)))
+T(n + 1) = 2n + (2(n-1) + (2(n-2) + (2(n-3) + T(n-3))))
+T(n + 1) = 2n + 2(n-1) + 2(n-2) + 2(n-3)......2(n-(n-1) + T(1))
+T(n + 1) = 2n + 2n - 2 + 2n - 4 + 2n - 6 +.... + 10
+T(n + 1) = 2[n + n + n + ...] - 2[1 + 2 + 3 +...]
+T(n + 1) = 2[n*n] - 2[n(n+1)/2]
+T(n + 1) = 2[n*n] - [n*n + n]
+T(n + 1) = n*n - n
+T(n + 1) = O(n2)
