@@ -1,0 +1,53 @@
+What will be the output of the following JAVA program? 
+
+
+
+C/C++ Code
+ class GFG
+{
+   static int d=1;
+   static void count(int n)
+    {
+    System.out.print(n+" ");
+    System.out.print(d+" ");
+    d++;
+    if(n > 1) count(n-1);
+    System.out.print(d+" ");
+  }
+
+ public static void main(String args[])
+    {
+       count(3);
+    }
+}
+
+
+
+
+3 1 2 2 1 3 4 4 4
+
+3 1 2 1 1 1 2 2 2
+
+3 1 2 2 1 3 4
+
+3 1 2 1 1 1 2
+
+Answer:---A
+EXPLANATION
+
+count(3) will print value of n and d. So 3 1 will be printed 
+and d will become 2. 
+
+Then count(2) will be called. It will print value of n and d. 
+So 2 2 will be printed and d will become 3. 
+
+Then count(1) will be called. It will print value of n and d.
+So 1 3 will be printed and d will become 4. 
+
+Now count(1) will print value of d which is 4. count(1) will 
+finish its execution. 
+
+Then count(2) will print value of d which is 4. 
+
+Similarly, count(3) will print value of d which is 4. 
+So series will be A.
