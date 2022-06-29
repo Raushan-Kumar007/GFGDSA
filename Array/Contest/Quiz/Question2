@@ -1,0 +1,16 @@
+An all-pairs shortest-paths problem is efficiently solved using:
+
+A
+Dijkstra' algorithm
+B
+Bellman-Ford algorithm
+C
+Kruskal algorithm
+D
+Floyd-Warshall algorithm
+Answer:---D
+EXPLANATION
+
+An all-pairs shortest-paths problem is efficiently solved using Floyd-Warshall algorithm.
+For more information on all-pairs shortest-paths problem and its solution using Floyd-Warshall algorithm Refer:Dynamic Programming | Set 16 (Floyd Warshall Algorithm)
+So, option (D) is correct.
