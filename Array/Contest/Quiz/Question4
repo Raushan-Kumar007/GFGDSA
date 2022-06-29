@@ -1,0 +1,17 @@
+Which of the following is asymptotically smaller?
+
+A
+lg(lg*n)
+B
+lg*(lgn)
+C
+lg(n!)
+D
+lg*(n!)
+
+EXPLANATION
+
+Options are in following order:
+lg(lg*n) < lg*(lgn) < lg(n!) < lg*(n!).
+
+So, option (A) is correct.
