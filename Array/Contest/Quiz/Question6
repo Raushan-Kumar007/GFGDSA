@@ -1,0 +1,24 @@
+Consider the following C function:
+ 
+int f(int n)
+{
+   static int i = 1;
+   if (n >= 5)
+      return n;
+   n = n+i;
+   i++;
+   return f(n);
+}
+
+The value returned by f(1) is
+
+
+
+5
+6
+7
+8
+Answer:---C
+EXPLANATION
+
+See Question 3 of http://www.geeksforgeeks.org/c-language-set-2/
