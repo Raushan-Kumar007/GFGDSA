@@ -1,0 +1,109 @@
+/// JAVA //// 
+
+import java.io.*;
+import java.util.*;
+
+class GFG {
+	public static void main (String[] args) {
+	    
+		Scanner sc=new Scanner(System.in);
+		int testcases=sc.nextInt();
+		
+		while(testcases-->0)
+		{
+		    long n=sc.nextLong();
+		    
+		    long smaller;
+		    long greater;
+		    
+		    if(Geeks.isPerfectSquare(n)==true)
+		    {
+		        smaller=(long)Math.sqrt(n)-1;
+		        greater=(long)Math.sqrt(n)+1;
+		    }
+		    else
+		    {
+		        smaller=(long)Math.floor(Math.sqrt(n));
+		        greater=(long)Math.ceil(Math.sqrt(n));
+		    }
+		    
+		    if((long)Math.abs(smaller*smaller-n)<(long)Math.abs(greater*greater-n))
+		    System.out.println(smaller*smaller);
+		    else
+		    System.out.println(greater*greater);
+		}
+	}
+}
+
+class Geeks
+{
+    public static boolean isPerfectSquare(long number)
+    {
+        long root=(long)Math.sqrt(number);
+        return root*root==number;
+    }
+}
+ /// C++ /// 
+ #include <bits/stdc++.h>
+using namespace std;
+
+
+bool isPerfectSquare(long long number)
+{
+    long long root=sqrt(number);
+    return root*root==number;
+}
+
+int main() {
+    int testcases;
+    cin>>testcases;
+    while(testcases--)
+    {
+        long long n;
+        cin>>n;
+        
+        long long smaller;
+        long long greater;
+        
+        if(isPerfectSquare(n)==true)
+        {
+           smaller=sqrt(n)-1;
+           greater=sqrt(n)+1;
+        }
+        else
+        {
+           smaller=floor(sqrt(n));
+           greater=ceil(sqrt(n));
+        }
+        
+        
+        if(abs(smaller*smaller-n)<abs(greater*greater-n))
+            cout<<smaller*smaller<<endl;
+        else
+            cout<<greater*greater<<endl;
+        
+    }
+	return 0;
+}
+//// PYTHON /// 
+import math
+def ps(n):
+    num=int(math.sqrt(n))
+    return num*num==n
+
+testcases=int(input())
+while(testcases>0):
+    n=int(input())
+    smaller=0
+    greater=0
+    if(ps(n) is True):
+        smaller=int(math.sqrt(n))-1
+        greater=int(math.sqrt(n))+1
+    else:
+        smaller=math.floor(math.sqrt(n))
+        greater=math.ceil(math.sqrt(n))
+    if(abs(smaller*smaller-n)<abs(greater*greater-n)):
+        print(int(smaller*smaller))
+    else:
+        print(int(greater*greater))
+    testcases-=1
