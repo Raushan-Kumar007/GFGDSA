@@ -1,0 +1,38 @@
+Consider the code fragment written in JAVA below : 
+
+
+
+C/C++ Code
+ void f (int n)
+{ 
+  if (n <=1)  {
+   System.out.print(n);
+  }
+  else {
+   f (n/2);
+   System.out.print(n%2);
+  }
+}
+
+What does f(173) print?
+
+
+
+
+
+
+010110101
+
+010101101
+
+10110101
+
+10101101
+
+Answer:---D
+EXPLANATION
+
+
+(173)2 = 10101101
+
+
