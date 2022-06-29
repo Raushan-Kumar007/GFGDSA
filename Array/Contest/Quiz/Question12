@@ -1,0 +1,57 @@
+C/C++ Code
+ class GFG
+{
+  static int f(int a[],int i, int n)
+  {
+    if(n <= 0) return 0;
+    else if(a[i] % 2 == 0) return a[i] + f(a, i+1, n-1);
+    else return a[i] - f(a, i+1, n-1);
+  }
+   public static void main(String args[])
+    {
+      int a[] = {12, 7, 13, 4, 11, 6};
+      System.out.print(f(a,0,6));
+    }
+}
+
+
+
+
+-9
+
+5
+
+15
+
+19
+
+Answer:--C
+EXPLANATION
+
+
+f() is a recursive function which adds f(a+1, n-1) to *a if *a is even. If *a is odd then f() subtracts f(a+1, n-1) from *a. See below recursion tree for execution of f(a, 6). .
+
+
+ f(add(12), 6) /*Since 12 is first element. a contains address of 12 */
+    |
+    |
+ 12 + f(add(7), 5) /* Since 7 is the next element, a+1 contains address of 7 */
+        |
+        |
+     7 - f(add(13), 4)
+              |
+              |
+           13 - f(add(4), 3)
+                     |
+                     |
+                  4 + f(add(11), 2)
+                             |
+                             |
+                           11 - f(add(6), 1)
+                                    |
+                                    |
+                                 6 + 0
+
+So, the final returned value is 12 + (7 – (13 – (4 + (11 – (6 + 0))))) = 15
+
+
