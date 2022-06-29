@@ -1,0 +1,18 @@
+Consider the same recursive C function that takes two arguments
+ 
+unsigned int foo(unsigned int n, unsigned int r) {
+  if (n  > 0) return (n%r +  foo (n/r, r ));
+  else return 0;
+}
+What is the return value of the function foo when it is called as foo(513, 2)?
+
+
+9
+8
+5
+2
+Answer:--D
+EXPLANATION
+
+foo(513, 2) will return 1 + foo(256, 2). All subsequent recursive calls (including foo(256, 2)) will return 0 + foo(n/2, 2) except the last call foo(1, 2) . The last call foo(1, 2) returns 1. So, the value returned by foo(513, 2) is 1 + 0 + 0…. + 0 + 1.
+The function foo(n, 2) basically returns sum of bits (or count of set bits) in the number n.
