@@ -1,0 +1,25 @@
+Let f(n) and g(n) be asymptotically non-negative functions. Which of the following is correct?
+
+
+θ ( f (n)*g(n)) = min (f (n), g(n))
+θ ( f (n)*g(n)) = max (f (n), g(n))
+θ( f (n) + g(n)) = min (f (n), g(n))
+θ ( f (n) + g(n)) = max (f (n), g(n))
+
+EXPLANATION
+
+
+Case-1:
+When none of the f(n) and g(n) are constant functions - In this case max(f(n) , g(n)) <= f(n) * g(n) so max(f(n), g(n)) can not provide a upper bound for f(n) * g(n).
+
+
+Case-2:
+When both of the f(n) & g(n) are constant functions or when any one of the f(n) and g(n) is a non zero constant function, In this case f(n) * g(n) = theta(max(f(n), g(n))).
+
+
+Case-3:
+When at least any one of the f(n) and g(n) is 0, In this case f(n) * g(n) != theta(max(f(n), g(n))). Since max(f(n), g(n)) COULD BE unable to give a lower bound.
+
+
+
+Option (D) is correct.
