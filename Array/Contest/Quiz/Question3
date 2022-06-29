@@ -1,0 +1,16 @@
+The travelling salesman problem can be solved in:
+
+A
+Polynomial time using dynamic programming algorithm
+B
+Polynomial time using branch-and-bound algorithm
+C
+Exponential time using dynamic programming algorithm or branch-and-bound algorithm
+D
+Polynomial time using backtracking algorithm
+Answer:----C
+EXPLANATION
+
+The travelling salesman problem can be solved in exponential time using dynamic programming algorithm or branch-and-bound algorithm.
+For more information on travelling salesman problem and its solution Refer:Travelling Salesman Problem
+So, option (C) is correct.
