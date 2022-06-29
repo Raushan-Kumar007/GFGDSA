@@ -1,0 +1,39 @@
+Consider the JAVA function given below. 
+
+
+
+C/C++ Code
+  static  int f(int j)
+{
+   int i = 50;
+  int k;
+  if (i == j)
+  {
+    System.out.print("something");
+    k = f(i);
+    return 0;
+  }
+  else return 0;
+}
+
+Which one of the following is TRUE?
+
+
+
+
+
+
+The function returns 0 for all values of j.
+
+The function prints the string something for all values of j.
+
+The function returns 0 when j = 50.
+
+The function will exhaust the runtime stack or run into an infinite loop when j = 50
+
+Answer:---D
+EXPLANATION
+
+
+When j is 50, the function would call itself again and again as neither i nor j is changed inside the recursion.
+
