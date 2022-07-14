@@ -1,6 +1,5 @@
 package Shorting;
 
-import java.util.Arrays;
 
 public class SortArrinThree {
     // Naive Approch with BigO(n) time complexity and theta(n) Auxullary Space
@@ -28,6 +27,10 @@ public class SortArrinThree {
         }
     }
     */
+
+    // Efficient approch for sorting three element
+    // Dutch National Flag 
+
     static void sort(int arr[],int n){
         int l=0,h=n-1,mid=0;
         while(mid<=h){
